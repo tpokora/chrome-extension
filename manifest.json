@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "test",
+    "short_name": "test",
+    "description": "test",
+    "version": "1.0.0",
+    "author": "tomek",
+
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+    "background": {
+        "page": "index.html",
+        "persistent": false
+    },
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+    "permissions": ["activeTab"],
+
+    "browser_action": {
+
+    },
+
+    "default_popup": "index.html"
+
+
+}
